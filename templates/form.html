@@ -1,0 +1,23 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+</head>
+<p1>Please fill out this optional feedback form to help us improve our AI. (Please provide accurate information)</p1><br>
+<body>
+  <form methods='post'/>
+      <label>The model was accurate in predicting my type of skin pigmentation</label>
+      <input type="radio" id="yes" name="option" value="yes">
+      <label for="html">Yes</label>
+      <input type="radio" id="no" name="option" value="no">
+      <label for="css">No</label><br>
+      <label>Please upload a photo of your skin pigmentation so we can use it to further train the model</label><br>
+      <input type='file' id='photo' name='photo'><br>
+      <input type='submit'>
+  </form>
+  {{ option }}
+</body>
+</html>
